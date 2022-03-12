@@ -1,0 +1,49 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  min-height: 850px;
+
+  .eventDetails {
+    box-shadow: 2px 2px 4px $black;
+    .pageTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sectionDetail {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .fieldTitle {
+        color: $grey-20;
+      }
+
+      .inputField {
+        margin-bottom: 15px;
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid $grey-10;
+      }
+
+      .dateTime {
+        height: 30px;
+        width: 100%;
+        background-color: $white;
+      }
+
+      .descriptionField {
+        height: auto;
+      }
+
+      .fileUpload {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

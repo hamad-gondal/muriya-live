@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import "./styles//variable.scss";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: $app-background;
+  min-height: 100vh;
+  padding: 0 15px;
+
+  @media (min-width: $medium-screen) {
+    padding: 0 50px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid $grey-10;
+
+  .logo {
+    img {
+      width: 100px;
+    }
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .link {
+      color: $grey-20;
+      margin-left: 10px;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.footer {
+  color: $grey-20;
+  padding: 20px 0;
+  border-top: 1px solid $grey-10;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}

@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.events {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .loader {
+    min-height: 350px;
+  }
+}

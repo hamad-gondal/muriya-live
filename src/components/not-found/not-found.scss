@@ -1,0 +1,45 @@
+@import "../../styles/variable.scss";
+
+.notFound {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .animation {
+    svg {
+      height: auto;
+    }
+  }
+
+  .lost {
+    color: $grey-20;
+    font-size: 1.8em;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .btn {
+    height: auto;
+    margin: 0;
+  }
+
+  @media (min-width: $medium-screen) {
+    margin-top: -200px;
+
+    .animation {
+      height: 330px !important;
+
+      svg {
+        height: 330px !important;
+      }
+    }
+
+    .lost {
+      font-size: 2em;
+    }
+  }
+}
