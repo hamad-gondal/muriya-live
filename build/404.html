@@ -12,7 +12,7 @@
         html,
         body {
             font-family: system-ui;
-            height: 100%;
+            height: 80%;
             margin: 0;
             background-color: #f2f2f2;
         }
@@ -26,7 +26,7 @@
         }
 
         .image {
-            width: 300px;
+            width: 500px;
         }
 
         .btn {
@@ -49,17 +49,24 @@
             border-color: #207ebd;
             background: #207ebd;
         }
+
+        .heading {
+            margin-top: -65px;
+        }
     </style>
 </head>
 
 <body>
     <div class="notFound">
         <div class="image">
-            <img src="./404.svg" alt="404">
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_scqggbnw.json" background="transparent"
+                speed="1" style="width: 500px; height: 500px;" loop autoplay>
+            </lottie-player>
         </div>
-        <h4>Looks like you are lost :(</h4>
+        <h1 class="heading">Looks like you are lost :(</h1>
         <a href="https://muriya-live.web.app/" class="btn">Return Home</a>
     </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
