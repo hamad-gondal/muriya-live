@@ -13,6 +13,7 @@
     "@types/react-router-dom": "^5.3.3",
     "exif-js": "^2.3.0",
     "firebase": "^9.6.8",
+    "firebase-tools": "^10.2.2",
     "lodash": "^4.17.21",
     "lottie-react": "^2.2.1",
     "moment": "^2.29.1",
